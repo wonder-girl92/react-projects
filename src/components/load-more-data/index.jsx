@@ -10,14 +10,12 @@ export default function LoadMoreData() {
   async function fetchProducts() {
     try {
       setLoading(true);
-      const response = await fetch(
-        `https://dummyjson.com/products?limit=20&skip=${count === 0 ? 0 : count * 20}`,
-      );
+      const response = await fetch(`https://dummyjson.com/products?limit=20&skip=${count}`);
 
       const result = await response.json();
 
       if (result && result.products && result.products.length) {
-        setProducts((prevData) => [...prevData, ...result.products]);
+        setProducts([...products, ...result.products]);
         setLoading(false);
       }
 
@@ -53,7 +51,7 @@ export default function LoadMoreData() {
           : null}
       </div>
       <div className='button-container'>
-        <button disabled={disableButton} onClick={() => setCount(count + 1)}>
+        <button disabled={disableButton} onClick={() => setCount(count + 20)}>
           Load More Products
         </button>
         {disableButton ? <p>You have reached to 100 products</p> : null}
