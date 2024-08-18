@@ -1,8 +1,9 @@
 import './App.css';
-import TabTest from './components/custom-tabs/tab-test';
+import Modaltest from './components/custom-modal-popup/modal-test';
+// import TabTest from './components/custom-tabs/tab-test';
 // import LightDarkMode from './components/light-dark-mode';
 // import QrCodeGenerator from './components/qr-code-generator';
-import ScrollIndicator from './components/scroll-indicator';
+// import ScrollIndicator from './components/scroll-indicator';
 // import ImageSlider from './components/image-slider';
 // import LoadMoreData from './components/load-more-data';
 // import TreeView from './components/tree-view';
@@ -29,7 +30,8 @@ function App() {
       {/* <QrCodeGenerator /> */}
       {/* <LightDarkMode /> */}
       {/* <ScrollIndicator url={"https://dummyjson.com/products?limit=100"} /> */}
-        <TabTest/>
+        {/* <TabTest/> */}
+        <Modaltest/>
     </>
   );
 }
