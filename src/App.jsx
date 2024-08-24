@@ -1,5 +1,6 @@
 import './App.css';
-import GithubProfileFinder from './components/github-profile-finder';
+import SearchAutoComplete from './components/search-autocomplete-w-api';
+// import GithubProfileFinder from './components/github-profile-finder';
 // import Modaltest from './components/custom-modal-popup/modal-test';
 // import TabTest from './components/custom-tabs/tab-test';
 // import LightDarkMode from './components/light-dark-mode';
@@ -33,7 +34,8 @@ function App() {
       {/* <ScrollIndicator url={"https://dummyjson.com/products?limit=100"} /> */}
       {/* <TabTest/> */}
       {/* <Modaltest/> */}
-      <GithubProfileFinder />
+      {/* <GithubProfileFinder /> */}
+      <SearchAutoComplete />
     </>
   );
 }

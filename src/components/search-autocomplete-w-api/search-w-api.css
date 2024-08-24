@@ -1,0 +1,10 @@
+.search-autocomplete-container {
+  display: flex;
+  justify-content: center;
+}
+
+.filtered-item {
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
