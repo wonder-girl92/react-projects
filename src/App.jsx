@@ -1,5 +1,6 @@
 import './App.css';
-import SearchAutoComplete from './components/search-autocomplete-w-api';
+import TicTacToe from './components/tic-tac-toe';
+// import SearchAutoComplete from './components/search-autocomplete-w-api';
 // import GithubProfileFinder from './components/github-profile-finder';
 // import Modaltest from './components/custom-modal-popup/modal-test';
 // import TabTest from './components/custom-tabs/tab-test';
@@ -35,7 +36,8 @@ function App() {
       {/* <TabTest/> */}
       {/* <Modaltest/> */}
       {/* <GithubProfileFinder /> */}
-      <SearchAutoComplete />
+      {/* <SearchAutoComplete /> */}
+      <TicTacToe/>
     </>
   );
 }

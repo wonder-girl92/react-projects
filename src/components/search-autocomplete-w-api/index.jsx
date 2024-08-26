@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import Suggestions from './suggestions';
 import './search-w-api.css';
-// import UserProfile from './user-profile';
 
 export default function SearchAutoComplete() {
   const [loading, setLoading] = useState(false);
