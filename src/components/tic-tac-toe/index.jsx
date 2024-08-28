@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react';
 import './styles.css';
 
-function Square({ value, onClick }) {
-  return (
-    <button onClick={onClick} className='square'>
-      {value}
-    </button>
-  );
-}
+// function Square({ value, onClick }) {
+//   return (
+//     <button onClick={onClick} className='square'>
+//       {value}
+//     </button>
+//   );
+// }
 
 export default function TicTacToe() {
   const [squares, setSquares] = useState(Array(9).fill(''));
@@ -59,9 +59,25 @@ export default function TicTacToe() {
     }
   }, [squares, isXTurn])
 
+  const renderSquare = (index) => {
+    return (
+      <button className="square" onClick={() => handleClick(index)}>
+        {squares[index]}
+      </button>
+    );
+  };
+
+  const renderBoard = () => {
+    return (
+      <div className='board'>
+        {Array.from({ length: 9 }).map((_, index) => renderSquare(index))}
+      </div>
+    );
+  };
+
   return (
     <div className='tic-tac-toe-container'>
-      <div className='row'>
+      {/* <div className='row'>
         <Square value={squares[0]} onClick={() => handleClick(0)} />
         <Square value={squares[1]} onClick={() => handleClick(1)} />
         <Square value={squares[2]} onClick={() => handleClick(2)} />
@@ -74,8 +90,8 @@ export default function TicTacToe() {
       <div className='row'>
         <Square value={squares[6]} onClick={() => handleClick(6)} />
         <Square value={squares[7]} onClick={() => handleClick(7)} />
-        <Square value={squares[8]} onClick={() => handleClick(8)} />
-      </div>
+        <Square value={squares[8]} onClick={() => handleClick(8)} /> */}
+        {renderBoard()}
       <h1>{status}</h1>
       <button onClick={handleRestart}>Restart</button>
     </div>
