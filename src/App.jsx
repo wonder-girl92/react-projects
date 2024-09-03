@@ -1,5 +1,7 @@
 import './App.css';
-import TicTacToe from './components/tic-tac-toe';
+import FeatureFlags from './components/feature-flag';
+import FeatureFlagGlobalState from './components/feature-flag/context';
+// import TicTacToe from './components/tic-tac-toe';
 // import SearchAutoComplete from './components/search-autocomplete-w-api';
 // import GithubProfileFinder from './components/github-profile-finder';
 // import Modaltest from './components/custom-modal-popup/modal-test';
@@ -37,7 +39,10 @@ function App() {
       {/* <Modaltest/> */}
       {/* <GithubProfileFinder /> */}
       {/* <SearchAutoComplete /> */}
-      <TicTacToe/>
+      {/* <TicTacToe/> */}
+      <FeatureFlagGlobalState>
+        <FeatureFlags />
+      </FeatureFlagGlobalState>
     </>
   );
 }
