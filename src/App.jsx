@@ -1,7 +1,8 @@
 import './App.css';
+import UseOnClickOutsideTest from './components/use-outside-click/test';
 // import FeatureFlags from './components/feature-flag';
 // import FeatureFlagGlobalState from './components/feature-flag/context';
-import UseFetchHookTest from './use-fetch/test';
+// import UseFetchHookTest from './use-fetch/test';
 // import TicTacToe from './components/tic-tac-toe';
 // import SearchAutoComplete from './components/search-autocomplete-w-api';
 // import GithubProfileFinder from './components/github-profile-finder';
@@ -44,8 +45,8 @@ function App() {
       {/* <FeatureFlagGlobalState>
         <FeatureFlags />
       </FeatureFlagGlobalState> */}
-
-<UseFetchHookTest/>
+      {/* <UseFetchHookTest/> */}
+      <UseOnClickOutsideTest/>
     </>
   );
 }
