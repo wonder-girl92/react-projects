@@ -1,8 +1,9 @@
 import './App.css';
-import UseOnClickOutsideTest from './components/use-outside-click/test';
+import UseWindowResizeTest from './components/use-window-resize/test';
+// import UseOnClickOutsideTest from './components/use-outside-click/test';
 // import FeatureFlags from './components/feature-flag';
 // import FeatureFlagGlobalState from './components/feature-flag/context';
-// import UseFetchHookTest from './use-fetch/test';
+// import UseFetchHookTest from './components/use-fetch/test';
 // import TicTacToe from './components/tic-tac-toe';
 // import SearchAutoComplete from './components/search-autocomplete-w-api';
 // import GithubProfileFinder from './components/github-profile-finder';
@@ -15,7 +16,6 @@ import UseOnClickOutsideTest from './components/use-outside-click/test';
 // import LoadMoreData from './components/load-more-data';
 // import TreeView from './components/tree-view';
 // import menus from './components/tree-view/data';
-// import AccMy from './accMy';
 // import RandomColor from './components/accordion/random-color';
 // import Accordion from './components/accordion';
 // import StarRating from './components/star-rating';
@@ -25,7 +25,6 @@ function App() {
     <>
       {/* Accordion component */}
       {/* <Accordion /> */}
-      {/* <AccMy /> */}
       {/* <RandomColor /> */}
       {/* <StarRating noOfStars={10} /> */}
 
@@ -46,7 +45,8 @@ function App() {
         <FeatureFlags />
       </FeatureFlagGlobalState> */}
       {/* <UseFetchHookTest/> */}
-      <UseOnClickOutsideTest/>
+      {/* <UseOnClickOutsideTest/> */}
+      <UseWindowResizeTest/>
     </>
   );
 }

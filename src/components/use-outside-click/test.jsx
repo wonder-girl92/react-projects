@@ -5,6 +5,8 @@ export default function UseOnClickOutsideTest() {
   const [showContent, setShowContent] = useState(false);
   const ref = useRef();
   useOutsideClick(ref, ()=> setShowContent(false));
+  console.log(ref.current);
+  
 
   return (
     <div>
