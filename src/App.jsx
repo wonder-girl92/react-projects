@@ -1,6 +1,7 @@
 import './App.css';
-import ScrollToTopAndBottom from './components/scroll-to-top-and-bottom';
-import UseWindowResizeTest from './components/use-window-resize/test';
+import ScrollToSection from './components/scroll-to-top-and-bottom/scroll-to-section'
+// import ScrollToTopAndBottom from './components/scroll-to-top-and-bottom';
+// import UseWindowResizeTest from './components/use-window-resize/test';
 // import UseOnClickOutsideTest from './components/use-outside-click/test';
 // import FeatureFlags from './components/feature-flag';
 // import FeatureFlagGlobalState from './components/feature-flag/context';
@@ -29,8 +30,8 @@ function App() {
       {/* <RandomColor /> */}
       {/* <StarRating noOfStars={10} /> */}
 
-      {/* <ImageSlider 
-      url={'https://jsonplaceholder.typicode.com/albums/1/photos?_start=0&_end=10'} 
+      {/* <ImageSlider
+      url={'https://jsonplaceholder.typicode.com/albums/1/photos?_start=0&_end=10'}
       /> */}
       {/* <LoadMoreData /> */}
       {/* <TreeView menus={menus} /> */}
@@ -48,7 +49,8 @@ function App() {
       {/* <UseFetchHookTest/> */}
       {/* <UseOnClickOutsideTest/> */}
       {/* <UseWindowResizeTest/> */}
-      <ScrollToTopAndBottom/>
+      {/*<ScrollToTopAndBottom/>*/}
+      <ScrollToSection/>
     </>
   );
 }
